@@ -23,7 +23,7 @@
 #import "RCDataBaseManager.h"
 #import "RCDTestMessage.h"
 #import "MobClick.h"
-
+#import <BQMM/BQMM.h>
 #import <Bugly/Bugly.h>
 
 //#define RONGCLOUD_IM_APPKEY @"e0x9wycfx7flq" //offline key
@@ -78,6 +78,9 @@
       NSString *appId = @"appId";
       NSString *secret = @"appSecret";
       [[RCIM sharedRCIM] initWithAppKey:RONGCLOUD_IM_APPKEY BQMMAppId:appId BQMMAppSecret:secret];
+      //设置区域和语言
+      [[MMEmotionCentre defaultCentre] setSdkRegion:MMRegionOther];
+      [[MMEmotionCentre defaultCentre] setSdkLanguage:MMLanguageEnglish];
       
   }
     
