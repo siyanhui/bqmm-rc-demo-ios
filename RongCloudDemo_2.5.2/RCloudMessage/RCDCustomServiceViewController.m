@@ -20,6 +20,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)customServiceLeftCurrentViewController {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 //客服VC左按键注册的selector是customServiceLeftCurrentViewController，
 //这个函数是基类的函数，他会根据当前服务时间来决定是否弹出评价，根据服务的类型来决定弹出评价类型。
 //弹出评价的函数是commentCustomerServiceAndQuit，应用可以根据这个函数内的注释来自定义评价界面。
@@ -37,7 +41,7 @@
 //如果您需要自定义客服评价界面，请把本函数注释掉，
 //并打开下面“应用自定义评价界面开始”到“应用自定义评价界面结束”部分的代码，然后根据您的需求进行修改。
 - (void)commentCustomerServiceAndQuit:(int)serviceStatus {
-    [super commentCustomerServiceAndQuit:serviceStatus];
+//    [super commentCustomerServiceAndQuit:serviceStatus];
 }
 
 //＊＊＊＊＊＊＊＊＊应用去掉评价界面开始＊＊＊＊＊＊＊＊＊＊＊＊＊

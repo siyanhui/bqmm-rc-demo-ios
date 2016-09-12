@@ -1,5 +1,5 @@
 //
-//  RCMessageCommonCell.h
+//  RCMessageCell.h
 //  RongIMKit
 //
 //  Created by xugang on 15/1/28.
@@ -21,6 +21,7 @@
 #define TEXT_MESG_FACE_TYPE @"facetype" //大表情消息类型
 #define TEXT_MESG_EMOJI_TYPE @"emojitype" //图文混排消息类型
 #define TEXT_MESG_DATA @"msg_data"  //文字消息扩展内容
+
 
 @class RCloudImageView;
 

@@ -18,7 +18,9 @@
 @interface RCConversationSettingTableViewController : UITableViewController
 
 /*!
-内置置顶聊天，新消息通知，清除消息记录三个cell
+默认的Cell
+
+@discussion 内置置顶聊天、新消息通、清除消息记录三个cell
 */
 @property(nonatomic, strong, readonly) NSArray *defaultCells;
 
@@ -82,7 +84,7 @@
  
  @param users 用户信息RCUserInfo列表
  */
-- (void)addUsers:(NSArray *)users;
+- (void)inviteRemoteUsers:(NSArray *)users;
 
 /*!
  点击Item（用户头像或加减号）的回调

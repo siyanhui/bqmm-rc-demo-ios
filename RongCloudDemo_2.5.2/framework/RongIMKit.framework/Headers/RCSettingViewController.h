@@ -1,5 +1,5 @@
 //
-//  RCSettingController.h
+//  RCSettingViewController.h
 //  RongIMKit
 //
 //  Created by Liv on 15/4/20.
@@ -37,13 +37,6 @@ typedef void (^clearHistory)(BOOL isSuccess);
  @discussion 在清空消息的的回调中,您需要调用聊天界面的reloadData进行刷新。
  */
 @property(nonatomic, copy) clearHistory clearHistoryCompletion;
-
-/*!
- 默认的Cell
- 
- @discussion 内置置顶聊天、新消息通、清除消息记录三个cell
- */
-@property(nonatomic, readonly, strong) NSArray *defaultCells;
 
 /*!
  清空会话中所有消息的ActionSheet

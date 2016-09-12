@@ -62,7 +62,7 @@
 
 - (IBAction)btnVoIP:(id)sender {
     //语音通话
-    [[RCIM sharedRCIM] startVoIPCallWithTargetId:self.userInfo.userId];
+//    [[RCIM sharedRCIM] startVoIPCallWithTargetId:self.userInfo.userId];
 }
 
 

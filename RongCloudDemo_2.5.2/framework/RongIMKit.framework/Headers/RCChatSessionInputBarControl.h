@@ -11,9 +11,11 @@
 #import <UIKit/UIKit.h>
 #import <RongIMLib/RongIMLib.h>
 #import "RCTextView.h"
+
 #import <BQMM/BQMM.h>
 
 @class MMEmoji;
+
 
 #define Height_ChatSessionInputBar 50.0f
 
@@ -137,6 +139,7 @@ typedef NS_ENUM(NSInteger, KBottomBarStatus) {
  */
 @interface RCChatSessionInputBarControl : UIView<MMEmotionCentreDelegate>
 
+
 /*!
  输入工具栏的点击回调监听
  */
@@ -245,6 +248,8 @@ typedef NS_ENUM(NSInteger, KBottomBarStatus) {
  *  dismiss公众账号弹出菜单
  */
 - (void)dismissPublicServiceMenuPopupView;
+
+- (void)refreshInputViewFrame;
 @end
 
 /*!
@@ -280,6 +285,7 @@ typedef NS_ENUM(NSInteger, KBottomBarStatus) {
  @param text         当前输入框中国的文本内容
  */
 - (void)didTouchKeyboardReturnKey:(UITextView *)textView;
+
 
 /*!
  点击表情按钮的回调
@@ -334,6 +340,8 @@ typedef NS_ENUM(NSInteger, KBottomBarStatus) {
  *  点击输入框出发切换键盘
  */
 - (void)didTouchMMTextViewOverLay;
+
+
 
 /*!
  输入框中内容发生变化的回调

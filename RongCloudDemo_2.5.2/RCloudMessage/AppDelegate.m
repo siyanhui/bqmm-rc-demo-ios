@@ -79,8 +79,8 @@
       NSString *secret = @"appSecret";
       [[RCIM sharedRCIM] initWithAppKey:RONGCLOUD_IM_APPKEY BQMMAppId:appId BQMMAppSecret:secret];
       //设置区域和语言
-      [[MMEmotionCentre defaultCentre] setSdkRegion:MMRegionOther];
-      [[MMEmotionCentre defaultCentre] setSdkLanguage:MMLanguageEnglish];
+      [[MMEmotionCentre defaultCentre] setSdkRegion:MMRegionChina];
+      [[MMEmotionCentre defaultCentre] setSdkLanguage:MMLanguageChinese];
       
   }
     

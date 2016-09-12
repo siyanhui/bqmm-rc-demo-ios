@@ -86,7 +86,7 @@
 /*!
  点击回调
  */
-@property (nonatomic, assign) id <RCAttributedLabelDelegate> delegate;
+@property (nonatomic, weak) id <RCAttributedLabelDelegate> delegate;
 /**
  *  attributeDictionary
  */

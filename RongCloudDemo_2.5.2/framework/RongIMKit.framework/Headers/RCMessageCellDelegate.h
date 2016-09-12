@@ -79,7 +79,7 @@
  @param model 消息Cell的数据模型
  @param isResolved 是否解决问题
  */
-- (void)didTapCustomService:(RCMessageModel *)model RobotResoluved:(BOOL)isResolved;
+- (void)didTapCustomerService:(RCMessageModel *)model RobotResoluved:(BOOL)isResolved;
 @end
 
 /*!
